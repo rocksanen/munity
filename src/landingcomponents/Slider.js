@@ -22,7 +22,7 @@ export const Slider = ({
     >
       <div
         className="slide__image-wrapper"
-        // style={slide.index == 1 ? { display: "none" } : { display: "flex" }}
+        style={slide.index === 1 ? { display: "none" } : { display: "flex" }}
       >
         <img
           alt={slide.headline}

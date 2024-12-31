@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app       # Mount local files
+      - /app/node_modules # Preserve container's node_modules
+    stdin_open: true
+    tty: true
+

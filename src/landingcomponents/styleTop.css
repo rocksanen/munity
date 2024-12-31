@@ -299,26 +299,7 @@ div.dropdown-menu:before {
       cursor: pointer;
       color: white;
     } */
-    .fixBtn:hover {
-      cursor: pointer !important;
-      color: white;
-    }
 
-    .fixBtn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 280px;
-      height: 51px;
-      background-image: linear-gradient(
-        to right,
-        #7335d6,
-        #7936d9,
-        #8b38e4,
-        #963aea
-      );
-      border-radius: 8px;
-    }
 
     .miniHorse1 {
       display: flex;

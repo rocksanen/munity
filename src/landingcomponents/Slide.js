@@ -14,6 +14,7 @@ import fix2 from "../images/fix2.png";
 import fix3 from "../images/fix3.png";
 import fix4 from "../images/fix4.png";
 import fix from "../images/fotor.png";
+
 const images = [Slide1, Slide2, Slide3];
 const delay = 4500;
 export const Slide = () => {
@@ -57,7 +58,7 @@ export const Slide = () => {
             />
           ))}
         </div>
-        {/* <div className="slideshowDots">
+        { <div className="slideshowDots">
           {images.map((_, idx) => (
             <div
               key={idx}
@@ -67,7 +68,7 @@ export const Slide = () => {
               }}
             ></div>
           ))}
-        </div> */}
+        </div>}
         <div className="slideTools">
           <img
             src={isHoveredL ? SlideLBtnHo2 : SlideLBtn2}
@@ -96,41 +97,23 @@ export const Slide = () => {
           <div className="fix">
             <div className="fixSlide">
               <div className="fixTop">
-                <div
+              <div
                   className="miniHorse1"
-                  style={
-                    { backgroundImage: `url(${fix})` }
-                    // index === 0
-                    //   ? { backgroundImage: `url(${Minihorse1})` }
-                    //   : index === 1
-                    //   ? {
-                    //       backgroundImage: `url(${fix2})`,
-                    //       width: "254px",
-                    //       height: "169px",
-                    //       left: "0px",
-                    //     }
-                    //   : index === 2
-                    //   ? {
-                    //       backgroundImage: `url(${fix3})`,
-                    //       width: "295px",
-                    //       height: "295px",
-                    //       left: "0px",
-                    //       top: "-40px",
-                    //     }
-                    //   : index === 3
-                    //   ? {
-                    //       backgroundImage: `url(${fix4})`,
-                    //       width: "129px",
-                    //       height: "195px",
-                    //       left: "0px",
-                    //     }
-                    //   : {}
-                  }
+                  style={{
+                    backgroundImage:
+                      index === 0
+                        ? `url(${fix2})`
+                        : index === 1
+                        ? `url(${fix3})`
+                        : index === 2
+                        ? `url(${fix4})`
+                        : `url(${fix})`,
+                  }}
                 ></div>
-                {/* <div
+                { /*<div
                   className="miniHorse2"
                   style={
-                    index === 0
+                    index === 4
                       ? { backgroundImage: `url(${Minihorse2})` }
                       : { display: "none" }
                   }
