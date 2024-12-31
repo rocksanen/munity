@@ -230,16 +230,13 @@ div.dropdown-menu:before {
   }
   .slideshowSlider {
     white-space: nowrap;
-    transition: ease 1000ms;
+    transition: transform 1s cubic-bezier(0.25, 1, 0.35, 1); /* Keep smooth transition */
   }
 
   .slideHorse {
     background-size: 100% 100%;
     display: inline-block;
-    height: 550px;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding-top: 40px;
+    transition: background-size 1.5s cubic-bezier(0.25, 1, 0.5, 1); /* Unified with styleSlides.css */
   }
   .slideshowDots {
     position: relative;
